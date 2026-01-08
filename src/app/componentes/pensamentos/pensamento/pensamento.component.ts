@@ -1,5 +1,6 @@
 import { Pensamento } from './../pensamento';
 import { Component, Input, OnInit } from '@angular/core';
+import { AppRoutingModule } from "src/app/app-routing.module";
 
 @Component({
   selector: 'app-pensamento',

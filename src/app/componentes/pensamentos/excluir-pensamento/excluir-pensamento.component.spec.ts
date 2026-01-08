@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExluirPensamentoComponent } from './exluir-pensamento.component';
+import { ExluirPensamentoComponent } from './excluir-pensamento.component';
 
 describe('ExluirPensamentoComponent', () => {
   let component: ExluirPensamentoComponent;
