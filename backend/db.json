@@ -23,6 +23,12 @@
       "autoria": "Dev LucasPressão",
       "modelo": "modelo3",
       "id": 6
+    },
+    {
+      "conteudo": "Formulário reativo",
+      "autoria": "Angular",
+      "modelo": "modelo1",
+      "id": 7
     }
   ]
 }
