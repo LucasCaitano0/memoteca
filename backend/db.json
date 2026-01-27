@@ -2,8 +2,8 @@
   "pensamentos": [
     {
       "id": 1,
-      "conteudo": "BORA TOMAR UMAASASs",
-      "autoria": "EU AQUI123FSDFFS",
+      "conteudo": "BORA TOdas",
+      "autoria": "dasdasASDS",
       "modelo": "modelo1"
     },
     {
@@ -35,6 +35,12 @@
       "autoria": "fsdfs",
       "modelo": "modelo1",
       "id": 8
+    },
+    {
+      "conteudo": "O Melhorzin",
+      "autoria": "vem comigo time!",
+      "modelo": "modelo2",
+      "id": 9
     }
   ]
 }
