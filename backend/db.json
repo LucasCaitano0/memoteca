@@ -1,18 +1,11 @@
 {
   "pensamentos": [
     {
-      "id": 1,
-      "conteudo": "BORA TOdas",
-      "autoria": "dasdasASDS",
-      "modelo": "modelo1",
-      "favorito": false
-    },
-    {
       "id": 3,
       "conteudo": "Seu toba em perigo meu pau em açãoAAA",
       "autoria": "Ele mesmo",
       "modelo": "modelo3",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": 5,
@@ -25,7 +18,7 @@
       "conteudo": "Eu acho que estou começando a ficar com fome",
       "autoria": "Dev LucasPressão",
       "modelo": "modelo3",
-      "favorito": false,
+      "favorito": true,
       "id": 6
     },
     {
@@ -34,13 +27,6 @@
       "modelo": "modelo1",
       "favorito": false,
       "id": 7
-    },
-    {
-      "conteudo": "fsdfs",
-      "autoria": "fsdfs",
-      "modelo": "modelo1",
-      "favorito": false,
-      "id": 8
     },
     {
       "conteudo": "O Melhorzin",
