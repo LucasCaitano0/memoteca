@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { PensamentoService } from '../pensamento.service';
 import { Pensamento } from './../pensamento';
 import { Component, Input, OnInit } from '@angular/core';
@@ -15,8 +16,13 @@ export class ListarPensamentosComponent implements OnInit {
   filtro: string = '';
   haMaisPensamentos: boolean = true;
   favoritos: boolean = false;
+  listaFavoritos: Pensamento[] = [];
+  titulo: string = 'Meu Mural';
 
-  constructor(private service: PensamentoService) { }
+  constructor(
+    private service: PensamentoService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.service.listar(this.paginaAtual, this.filtro, this.favoritos).subscribe((listaPensamentos) => {
@@ -44,13 +50,24 @@ export class ListarPensamentosComponent implements OnInit {
        }) 
   }
 
+  recarregarComponente(){
+    //location.reload();
+    this.favoritos = false;
+    this.paginaAtual = 1;
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+    this.router.onSameUrlNavigation = 'reload'
+    this.router.navigate([this.router.url])
+  }
+
   listarFavoritos(){
+    this.titulo = 'Meus Favoritos';
     this.favoritos = true;
     this.haMaisPensamentos = true;
     this.paginaAtual = 1;
     this.service.listar(this.paginaAtual, this.filtro, this.favoritos)
     .subscribe(listaPensamentosFavoritos => {
       this.listaPensamentos = listaPensamentosFavoritos
+      this.listaFavoritos = listaPensamentosFavoritos
     })
   }
 
